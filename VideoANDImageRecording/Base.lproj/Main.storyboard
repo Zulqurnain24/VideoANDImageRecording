@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u89-WP-NJ2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Media Capture View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MediaCaptureViewController" customModule="YouVRAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="toj-WP-hos">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XhW-gl-hng" customClass="PreviewView" customModule="YouVRAssignment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <segmentedControl opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Tlf-JC-8ru">
+                                <rect key="frame" x="0.0" y="88" width="115" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="7z0-fu-Eof"/>
+                                    <constraint firstAttribute="height" constant="28" id="981-z5-Rfq"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Face"/>
+                                    <segment title="Features"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="UpdateDetectionType:" destination="BYZ-38-t0r" eventType="valueChanged" id="wGI-uP-rtq"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="ohT-n1-OaG">
+                                <rect key="frame" x="160.5" y="88" width="93" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="4dX-6W-Hy5"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Front"/>
+                                    <segment title="Back"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="UpdateCameraOrientation:" destination="BYZ-38-t0r" eventType="valueChanged" id="dZn-vV-5Fd"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="dRD-PE-Xgf">
+                                <rect key="frame" x="299" y="88" width="115" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="EKq-c4-Dvf"/>
+                                    <constraint firstAttribute="width" constant="115" id="KFO-FR-3Ve"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Image"/>
+                                    <segment title="Video"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="UpdateRecordingType:" destination="BYZ-38-t0r" eventType="valueChanged" id="S33-gp-lek"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSg-A4-4un">
+                                <rect key="frame" x="167" y="762" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="8Vg-ae-9dn"/>
+                                    <constraint firstAttribute="height" constant="80" id="EG8-my-8rx"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="recordButtonUnpressed">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="RecordMedia:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wHw-VN-9Ss"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="yr3-gj-Mel">
+                                <rect key="frame" x="139.5" y="129" width="135" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="rkT-VV-AIq"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Flash"/>
+                                    <segment title="No Flash"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="UpdateFlashSetting:" destination="BYZ-38-t0r" eventType="valueChanged" id="KZt-nD-t3C"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tlf-JC-8ru" firstAttribute="top" secondItem="5JD-k0-ZaU" secondAttribute="top" id="0oS-3M-OKF"/>
+                            <constraint firstItem="ohT-n1-OaG" firstAttribute="centerX" secondItem="toj-WP-hos" secondAttribute="centerX" id="47J-xQ-3I4"/>
+                            <constraint firstItem="5JD-k0-ZaU" firstAttribute="bottom" secondItem="aSg-A4-4un" secondAttribute="bottom" constant="20" id="5nc-ca-mTh"/>
+                            <constraint firstItem="XhW-gl-hng" firstAttribute="top" secondItem="toj-WP-hos" secondAttribute="top" id="8ly-sv-R23"/>
+                            <constraint firstItem="XhW-gl-hng" firstAttribute="leading" secondItem="5JD-k0-ZaU" secondAttribute="leading" id="Dzz-yd-h41"/>
+                            <constraint firstItem="XhW-gl-hng" firstAttribute="trailing" secondItem="5JD-k0-ZaU" secondAttribute="trailing" id="EBs-pK-QO2"/>
+                            <constraint firstItem="yr3-gj-Mel" firstAttribute="top" secondItem="ohT-n1-OaG" secondAttribute="bottom" constant="13" id="Eu3-bF-lZb"/>
+                            <constraint firstAttribute="bottom" secondItem="XhW-gl-hng" secondAttribute="bottom" id="FLe-Tf-1i7"/>
+                            <constraint firstItem="dRD-PE-Xgf" firstAttribute="top" secondItem="5JD-k0-ZaU" secondAttribute="top" id="JBo-dY-QMj"/>
+                            <constraint firstItem="5JD-k0-ZaU" firstAttribute="trailing" secondItem="dRD-PE-Xgf" secondAttribute="trailing" id="ZXY-h0-hVO"/>
+                            <constraint firstItem="Tlf-JC-8ru" firstAttribute="leading" secondItem="5JD-k0-ZaU" secondAttribute="leading" id="ZwL-sJ-ctl"/>
+                            <constraint firstItem="ohT-n1-OaG" firstAttribute="top" secondItem="5JD-k0-ZaU" secondAttribute="top" id="nmB-IY-Pt5"/>
+                            <constraint firstItem="yr3-gj-Mel" firstAttribute="centerX" secondItem="toj-WP-hos" secondAttribute="centerX" id="noM-f1-B5t"/>
+                            <constraint firstItem="aSg-A4-4un" firstAttribute="centerX" secondItem="toj-WP-hos" secondAttribute="centerX" id="wgb-s9-lP3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5JD-k0-ZaU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZsK-Ut-izg"/>
+                    <connections>
+                        <outlet property="cameraOrientationSegmentControl" destination="ohT-n1-OaG" id="jaN-8t-8cY"/>
+                        <outlet property="featureExtractionSegmentControl" destination="Tlf-JC-8ru" id="ZE9-o5-axY"/>
+                        <outlet property="flashToggleSegmentControl" destination="yr3-gj-Mel" id="Zct-by-48y"/>
+                        <outlet property="mediaCaptureTypeSegmentControl" destination="dRD-PE-Xgf" id="ddx-NQ-bJs"/>
+                        <outlet property="previewView" destination="XhW-gl-hng" id="1Mw-oL-TSw"/>
+                        <outlet property="recordButton" destination="aSg-A4-4un" id="hfp-5g-ipF"/>
+                        <segue destination="qjI-9u-Ovm" kind="show" identifier="RouteToReviewImageViewController" id="A9Y-RZ-WeT"/>
+                        <segue destination="2IZ-ja-vL4" kind="show" identifier="RouteToReviewVideoViewController" id="j9E-kN-Rbg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1195.6521739130435" y="-40.178571428571423"/>
+        </scene>
+        <!--Review Image View Controller-->
+        <scene sceneID="4E6-ZR-rWs">
+            <objects>
+                <viewController storyboardIdentifier="ReviewImageViewController" id="qjI-9u-Ovm" customClass="ReviewImageViewController" customModule="YouVRAssignment" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Zi-jc-l3r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pK2-t8-0kj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV6-VN-5Nq">
+                                <rect key="frame" x="282" y="88" width="112" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Save To Gallery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveImageToGalleryAction:" destination="qjI-9u-Ovm" eventType="touchUpInside" id="VLd-HU-kqE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bD-Xn-itT">
+                                <rect key="frame" x="33" y="88" width="43" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareImageAction:" destination="qjI-9u-Ovm" eventType="touchUpInside" id="Hd2-kr-7Iv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pK2-t8-0kj" firstAttribute="trailing" secondItem="VgX-6m-GoO" secondAttribute="trailing" id="2ST-Jv-Oqo"/>
+                            <constraint firstItem="pK2-t8-0kj" firstAttribute="leading" secondItem="VgX-6m-GoO" secondAttribute="leading" id="6J8-SJ-D6z"/>
+                            <constraint firstItem="eV6-VN-5Nq" firstAttribute="top" secondItem="VgX-6m-GoO" secondAttribute="top" id="Ck7-Sr-Ivf"/>
+                            <constraint firstItem="pK2-t8-0kj" firstAttribute="bottom" secondItem="VgX-6m-GoO" secondAttribute="bottom" id="CuU-4c-nlb"/>
+                            <constraint firstItem="9bD-Xn-itT" firstAttribute="leading" secondItem="VgX-6m-GoO" secondAttribute="leading" constant="33" id="Eao-jE-nFI"/>
+                            <constraint firstItem="pK2-t8-0kj" firstAttribute="top" secondItem="VgX-6m-GoO" secondAttribute="top" id="O20-H8-1yH"/>
+                            <constraint firstItem="9bD-Xn-itT" firstAttribute="top" secondItem="VgX-6m-GoO" secondAttribute="top" id="YUm-Fb-Q1G"/>
+                            <constraint firstItem="VgX-6m-GoO" firstAttribute="trailing" secondItem="eV6-VN-5Nq" secondAttribute="trailing" constant="20" id="jVB-TJ-Umd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VgX-6m-GoO"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="pK2-t8-0kj" id="oqB-zL-XLF"/>
+                        <outlet property="saveToGalleryButton" destination="eV6-VN-5Nq" id="cMo-VV-L6s"/>
+                        <outlet property="shareButton" destination="9bD-Xn-itT" id="bBW-cq-82F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMf-bK-Nz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2713.04347826087" y="-40.178571428571423"/>
+        </scene>
+        <!--Review Video View Controller-->
+        <scene sceneID="ooh-Ng-Cww">
+            <objects>
+                <viewController storyboardIdentifier="ReviewVideoViewController" id="2IZ-ja-vL4" customClass="ReviewVideoViewController" customModule="YouVRAssignment" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BWi-if-nEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REi-8c-4V4">
+                                <rect key="frame" x="288" y="88" width="106" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Save To Gallery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveVideoToGalleryAction:" destination="2IZ-ja-vL4" eventType="touchUpInside" id="UKz-9D-LXK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqc-gl-BPa">
+                                <rect key="frame" x="33" y="88" width="40" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="1" green="0.16109697449999999" blue="0.056606281719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareVideoAction:" destination="2IZ-ja-vL4" eventType="touchUpInside" id="KYO-zV-JYE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-05-f6g">
+                                <rect key="frame" x="167" y="723" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Nbf-ss-Gwh"/>
+                                    <constraint firstAttribute="height" constant="80" id="Zj2-4z-Kj2"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="playButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideoFromURLAction:" destination="2IZ-ja-vL4" eventType="touchUpInside" id="oAt-Rt-vJX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oqc-gl-BPa" firstAttribute="top" secondItem="72L-Gp-HUK" secondAttribute="top" id="8eE-nC-6Y9"/>
+                            <constraint firstItem="REi-8c-4V4" firstAttribute="top" secondItem="72L-Gp-HUK" secondAttribute="top" id="Tzs-dV-Byh"/>
+                            <constraint firstItem="72L-Gp-HUK" firstAttribute="trailing" secondItem="REi-8c-4V4" secondAttribute="trailing" constant="20" id="V3f-hi-e8v"/>
+                            <constraint firstItem="YLx-05-f6g" firstAttribute="centerX" secondItem="BWi-if-nEQ" secondAttribute="centerX" id="Vnh-PD-nHc"/>
+                            <constraint firstItem="72L-Gp-HUK" firstAttribute="bottom" secondItem="YLx-05-f6g" secondAttribute="bottom" constant="59" id="Xbb-9s-oMJ"/>
+                            <constraint firstItem="oqc-gl-BPa" firstAttribute="leading" secondItem="72L-Gp-HUK" secondAttribute="leading" constant="33" id="s8i-62-vNQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="72L-Gp-HUK"/>
+                    </view>
+                    <connections>
+                        <outlet property="playVideoPreviewButton" destination="YLx-05-f6g" id="TX5-ma-0Ls"/>
+                        <outlet property="saveToGalleryButton" destination="REi-8c-4V4" id="K3c-ss-hgc"/>
+                        <outlet property="shareButton" destination="oqc-gl-BPa" id="zMV-ZB-Cap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSC-aS-zMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="696"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xsQ-Gd-yKo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u89-WP-NJ2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5NP-p3-6Cn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="30H-ig-2wT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8M-tt-RVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285.50724637681162" y="-40.178571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playButton" width="80" height="80"/>
+        <image name="recordButtonUnpressed" width="83" height="80"/>
+    </resources>
+</document>

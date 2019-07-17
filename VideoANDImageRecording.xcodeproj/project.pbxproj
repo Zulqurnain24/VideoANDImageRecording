@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66401F8C22D5CE9E006F2DB4 /* YouVR_TestComputerVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401F8B22D5CE9E006F2DB4 /* YouVR_TestComputerVision.swift */; };
+		66401F8E22D5D1D4006F2DB4 /* YouVR_TestEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401F8D22D5D1D4006F2DB4 /* YouVR_TestEnums.swift */; };
+		66401F9022D5D6BC006F2DB4 /* YouVR_TestUtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401F8F22D5D6BC006F2DB4 /* YouVR_TestUtilityFunctions.swift */; };
+		66401F9422D5D88A006F2DB4 /* YouVR_TestApplicationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401F9322D5D88A006F2DB4 /* YouVR_TestApplicationFlow.swift */; };
 		66E1F03D22D451080035D624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F03C22D451080035D624 /* AppDelegate.swift */; };
-		66E1F03F22D451080035D624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F03E22D451080035D624 /* ViewController.swift */; };
+		66E1F03F22D451080035D624 /* MediaCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F03E22D451080035D624 /* MediaCaptureViewController.swift */; };
 		66E1F04222D451080035D624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E1F04022D451080035D624 /* Main.storyboard */; };
 		66E1F04422D451090035D624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E1F04322D451090035D624 /* Assets.xcassets */; };
 		66E1F04722D451090035D624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E1F04522D451090035D624 /* LaunchScreen.storyboard */; };
 		66E1F05222D451090035D624 /* YouVRAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F05122D451090035D624 /* YouVRAssignmentTests.swift */; };
 		66E1F05D22D451090035D624 /* YouVRAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F05C22D451090035D624 /* YouVRAssignmentUITests.swift */; };
+		66E1F06D22D452FA0035D624 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F06C22D452FA0035D624 /* PreviewView.swift */; };
+		66E1F07022D453B50035D624 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F06F22D453B50035D624 /* Extensions.swift */; };
+		66E1F07222D4588F0035D624 /* ReviewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F07122D4588F0035D624 /* ReviewImageViewController.swift */; };
+		66E1F07422D4589C0035D624 /* ReviewVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F07322D4589C0035D624 /* ReviewVideoViewController.swift */; };
+		66E1F07722D45D9F0035D624 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F07622D45D9F0035D624 /* UtilityFunctions.swift */; };
+		66E1F07A22D47A980035D624 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E1F07922D47A980035D624 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +44,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		66E1F03922D451080035D624 /* YouVRAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouVRAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66401F8B22D5CE9E006F2DB4 /* YouVR_TestComputerVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouVR_TestComputerVision.swift; sourceTree = "<group>"; };
+		66401F8D22D5D1D4006F2DB4 /* YouVR_TestEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouVR_TestEnums.swift; sourceTree = "<group>"; };
+		66401F8F22D5D6BC006F2DB4 /* YouVR_TestUtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouVR_TestUtilityFunctions.swift; sourceTree = "<group>"; };
+		66401F9322D5D88A006F2DB4 /* YouVR_TestApplicationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouVR_TestApplicationFlow.swift; sourceTree = "<group>"; };
+		66E1F03922D451080035D624 /* VideoANDImageRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoANDImageRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E1F03C22D451080035D624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66E1F03E22D451080035D624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66E1F03E22D451080035D624 /* MediaCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCaptureViewController.swift; sourceTree = "<group>"; };
 		66E1F04122D451080035D624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66E1F04322D451090035D624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66E1F04622D451090035D624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66E1F04822D451090035D624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66E1F04D22D451090035D624 /* YouVRAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouVRAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66E1F04D22D451090035D624 /* VideoANDImageRecordingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoANDImageRecordingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E1F05122D451090035D624 /* YouVRAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouVRAssignmentTests.swift; sourceTree = "<group>"; };
 		66E1F05322D451090035D624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66E1F05822D451090035D624 /* YouVRAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouVRAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66E1F05822D451090035D624 /* VideoANDImageRecordingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoANDImageRecordingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E1F05C22D451090035D624 /* YouVRAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouVRAssignmentUITests.swift; sourceTree = "<group>"; };
 		66E1F05E22D451090035D624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E1F06C22D452FA0035D624 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		66E1F06F22D453B50035D624 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		66E1F07122D4588F0035D624 /* ReviewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewImageViewController.swift; sourceTree = "<group>"; };
+		66E1F07322D4589C0035D624 /* ReviewVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewVideoViewController.swift; sourceTree = "<group>"; };
+		66E1F07622D45D9F0035D624 /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		66E1F07922D47A980035D624 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +94,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66401F8722D5CE1F006F2DB4 /* Computer Vision Functions */ = {
+			isa = PBXGroup;
+			children = (
+				66401F8B22D5CE9E006F2DB4 /* YouVR_TestComputerVision.swift */,
+			);
+			path = "Computer Vision Functions";
+			sourceTree = "<group>";
+		};
+		66401F8822D5CE30006F2DB4 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				66401F8D22D5D1D4006F2DB4 /* YouVR_TestEnums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		66401F8922D5CE45006F2DB4 /* Utility Functions */ = {
+			isa = PBXGroup;
+			children = (
+				66401F8F22D5D6BC006F2DB4 /* YouVR_TestUtilityFunctions.swift */,
+			);
+			path = "Utility Functions";
+			sourceTree = "<group>";
+		};
 		66E1F03022D451080035D624 = {
 			isa = PBXGroup;
 			children = (
-				66E1F03B22D451080035D624 /* YouVRAssignment */,
-				66E1F05022D451090035D624 /* YouVRAssignmentTests */,
-				66E1F05B22D451090035D624 /* YouVRAssignmentUITests */,
+				66E1F03B22D451080035D624 /* VideoANDImageRecording */,
+				66E1F05022D451090035D624 /* VideoANDImageRecordingTests */,
+				66E1F05B22D451090035D624 /* VideoANDImageRecordingUITests */,
 				66E1F03A22D451080035D624 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,50 +131,100 @@
 		66E1F03A22D451080035D624 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66E1F03922D451080035D624 /* YouVRAssignment.app */,
-				66E1F04D22D451090035D624 /* YouVRAssignmentTests.xctest */,
-				66E1F05822D451090035D624 /* YouVRAssignmentUITests.xctest */,
+				66E1F03922D451080035D624 /* VideoANDImageRecording.app */,
+				66E1F04D22D451090035D624 /* VideoANDImageRecordingTests.xctest */,
+				66E1F05822D451090035D624 /* VideoANDImageRecordingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66E1F03B22D451080035D624 /* YouVRAssignment */ = {
+		66E1F03B22D451080035D624 /* VideoANDImageRecording */ = {
 			isa = PBXGroup;
 			children = (
+				66E1F07822D47A8D0035D624 /* Enums */,
+				66E1F07522D45D850035D624 /* UtilityMethods */,
+				66E1F06E22D453A90035D624 /* Extensions */,
+				66E1F06B22D4513D0035D624 /* Views */,
+				66E1F06A22D451320035D624 /* Controllers */,
 				66E1F03C22D451080035D624 /* AppDelegate.swift */,
-				66E1F03E22D451080035D624 /* ViewController.swift */,
 				66E1F04022D451080035D624 /* Main.storyboard */,
 				66E1F04322D451090035D624 /* Assets.xcassets */,
 				66E1F04522D451090035D624 /* LaunchScreen.storyboard */,
 				66E1F04822D451090035D624 /* Info.plist */,
 			);
-			path = YouVRAssignment;
+			path = VideoANDImageRecording;
 			sourceTree = "<group>";
 		};
-		66E1F05022D451090035D624 /* YouVRAssignmentTests */ = {
+		66E1F05022D451090035D624 /* VideoANDImageRecordingTests */ = {
 			isa = PBXGroup;
 			children = (
+				66401F8922D5CE45006F2DB4 /* Utility Functions */,
+				66401F8822D5CE30006F2DB4 /* Enums */,
+				66401F8722D5CE1F006F2DB4 /* Computer Vision Functions */,
 				66E1F05122D451090035D624 /* YouVRAssignmentTests.swift */,
 				66E1F05322D451090035D624 /* Info.plist */,
 			);
-			path = YouVRAssignmentTests;
+			path = VideoANDImageRecordingTests;
 			sourceTree = "<group>";
 		};
-		66E1F05B22D451090035D624 /* YouVRAssignmentUITests */ = {
+		66E1F05B22D451090035D624 /* VideoANDImageRecordingUITests */ = {
 			isa = PBXGroup;
 			children = (
 				66E1F05C22D451090035D624 /* YouVRAssignmentUITests.swift */,
 				66E1F05E22D451090035D624 /* Info.plist */,
+				66401F9322D5D88A006F2DB4 /* YouVR_TestApplicationFlow.swift */,
 			);
-			path = YouVRAssignmentUITests;
+			path = VideoANDImageRecordingUITests;
+			sourceTree = "<group>";
+		};
+		66E1F06A22D451320035D624 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				66E1F03E22D451080035D624 /* MediaCaptureViewController.swift */,
+				66E1F07122D4588F0035D624 /* ReviewImageViewController.swift */,
+				66E1F07322D4589C0035D624 /* ReviewVideoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		66E1F06B22D4513D0035D624 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66E1F06C22D452FA0035D624 /* PreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66E1F06E22D453A90035D624 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				66E1F06F22D453B50035D624 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		66E1F07522D45D850035D624 /* UtilityMethods */ = {
+			isa = PBXGroup;
+			children = (
+				66E1F07622D45D9F0035D624 /* UtilityFunctions.swift */,
+			);
+			path = UtilityMethods;
+			sourceTree = "<group>";
+		};
+		66E1F07822D47A8D0035D624 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				66E1F07922D47A980035D624 /* Enums.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66E1F03822D451080035D624 /* YouVRAssignment */ = {
+		66E1F03822D451080035D624 /* VideoANDImageRecording */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66E1F06122D451090035D624 /* Build configuration list for PBXNativeTarget "YouVRAssignment" */;
+			buildConfigurationList = 66E1F06122D451090035D624 /* Build configuration list for PBXNativeTarget "VideoANDImageRecording" */;
 			buildPhases = (
 				66E1F03522D451080035D624 /* Sources */,
 				66E1F03622D451080035D624 /* Frameworks */,
@@ -140,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = YouVRAssignment;
+			name = VideoANDImageRecording;
 			productName = YouVRAssignment;
-			productReference = 66E1F03922D451080035D624 /* YouVRAssignment.app */;
+			productReference = 66E1F03922D451080035D624 /* VideoANDImageRecording.app */;
 			productType = "com.apple.product-type.application";
 		};
-		66E1F04C22D451090035D624 /* YouVRAssignmentTests */ = {
+		66E1F04C22D451090035D624 /* VideoANDImageRecordingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66E1F06422D451090035D624 /* Build configuration list for PBXNativeTarget "YouVRAssignmentTests" */;
+			buildConfigurationList = 66E1F06422D451090035D624 /* Build configuration list for PBXNativeTarget "VideoANDImageRecordingTests" */;
 			buildPhases = (
 				66E1F04922D451090035D624 /* Sources */,
 				66E1F04A22D451090035D624 /* Frameworks */,
@@ -158,14 +252,14 @@
 			dependencies = (
 				66E1F04F22D451090035D624 /* PBXTargetDependency */,
 			);
-			name = YouVRAssignmentTests;
+			name = VideoANDImageRecordingTests;
 			productName = YouVRAssignmentTests;
-			productReference = 66E1F04D22D451090035D624 /* YouVRAssignmentTests.xctest */;
+			productReference = 66E1F04D22D451090035D624 /* VideoANDImageRecordingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		66E1F05722D451090035D624 /* YouVRAssignmentUITests */ = {
+		66E1F05722D451090035D624 /* VideoANDImageRecordingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66E1F06722D451090035D624 /* Build configuration list for PBXNativeTarget "YouVRAssignmentUITests" */;
+			buildConfigurationList = 66E1F06722D451090035D624 /* Build configuration list for PBXNativeTarget "VideoANDImageRecordingUITests" */;
 			buildPhases = (
 				66E1F05422D451090035D624 /* Sources */,
 				66E1F05522D451090035D624 /* Frameworks */,
@@ -176,9 +270,9 @@
 			dependencies = (
 				66E1F05A22D451090035D624 /* PBXTargetDependency */,
 			);
-			name = YouVRAssignmentUITests;
+			name = VideoANDImageRecordingUITests;
 			productName = YouVRAssignmentUITests;
-			productReference = 66E1F05822D451090035D624 /* YouVRAssignmentUITests.xctest */;
+			productReference = 66E1F05822D451090035D624 /* VideoANDImageRecordingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +298,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66E1F03422D451080035D624 /* Build configuration list for PBXProject "YouVRAssignment" */;
+			buildConfigurationList = 66E1F03422D451080035D624 /* Build configuration list for PBXProject "VideoANDImageRecording" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +311,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66E1F03822D451080035D624 /* YouVRAssignment */,
-				66E1F04C22D451090035D624 /* YouVRAssignmentTests */,
-				66E1F05722D451090035D624 /* YouVRAssignmentUITests */,
+				66E1F03822D451080035D624 /* VideoANDImageRecording */,
+				66E1F04C22D451090035D624 /* VideoANDImageRecordingTests */,
+				66E1F05722D451090035D624 /* VideoANDImageRecordingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,8 +350,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E1F03F22D451080035D624 /* ViewController.swift in Sources */,
+				66E1F07222D4588F0035D624 /* ReviewImageViewController.swift in Sources */,
+				66E1F07422D4589C0035D624 /* ReviewVideoViewController.swift in Sources */,
+				66E1F03F22D451080035D624 /* MediaCaptureViewController.swift in Sources */,
 				66E1F03D22D451080035D624 /* AppDelegate.swift in Sources */,
+				66E1F06D22D452FA0035D624 /* PreviewView.swift in Sources */,
+				66E1F07722D45D9F0035D624 /* UtilityFunctions.swift in Sources */,
+				66E1F07A22D47A980035D624 /* Enums.swift in Sources */,
+				66E1F07022D453B50035D624 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66401F9022D5D6BC006F2DB4 /* YouVR_TestUtilityFunctions.swift in Sources */,
+				66401F8C22D5CE9E006F2DB4 /* YouVR_TestComputerVision.swift in Sources */,
+				66401F8E22D5D1D4006F2DB4 /* YouVR_TestEnums.swift in Sources */,
 				66E1F05222D451090035D624 /* YouVRAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66401F9422D5D88A006F2DB4 /* YouVR_TestApplicationFlow.swift in Sources */,
 				66E1F05D22D451090035D624 /* YouVRAssignmentUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,12 +386,12 @@
 /* Begin PBXTargetDependency section */
 		66E1F04F22D451090035D624 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66E1F03822D451080035D624 /* YouVRAssignment */;
+			target = 66E1F03822D451080035D624 /* VideoANDImageRecording */;
 			targetProxy = 66E1F04E22D451090035D624 /* PBXContainerItemProxy */;
 		};
 		66E1F05A22D451090035D624 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66E1F03822D451080035D624 /* YouVRAssignment */;
+			target = 66E1F03822D451080035D624 /* VideoANDImageRecording */;
 			targetProxy = 66E1F05922D451090035D624 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -363,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,14 +537,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = YouVRAssignment/Info.plist;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
+				INFOPLIST_FILE = VideoANDImageRecording/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.YouVRAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,14 +556,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = YouVRAssignment/Info.plist;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
+				INFOPLIST_FILE = VideoANDImageRecording/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.YouVRAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -468,7 +576,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = YouVRAssignmentTests/Info.plist;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
+				INFOPLIST_FILE = VideoANDImageRecordingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +587,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouVRAssignment.app/YouVRAssignment";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoANDImageRecording.app/VideoANDImageRecording";
 			};
 			name = Debug;
 		};
@@ -488,7 +597,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = YouVRAssignmentTests/Info.plist;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
+				INFOPLIST_FILE = VideoANDImageRecordingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +608,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouVRAssignment.app/YouVRAssignment";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoANDImageRecording.app/VideoANDImageRecording";
 			};
 			name = Release;
 		};
@@ -507,7 +617,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = YouVRAssignmentUITests/Info.plist;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
+				INFOPLIST_FILE = VideoANDImageRecordingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,7 +637,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = YouVRAssignmentUITests/Info.plist;
+				DEVELOPMENT_TEAM = GZK4ZKQ4UA;
+				INFOPLIST_FILE = VideoANDImageRecordingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,7 +655,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66E1F03422D451080035D624 /* Build configuration list for PBXProject "YouVRAssignment" */ = {
+		66E1F03422D451080035D624 /* Build configuration list for PBXProject "VideoANDImageRecording" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66E1F05F22D451090035D624 /* Debug */,
@@ -552,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66E1F06122D451090035D624 /* Build configuration list for PBXNativeTarget "YouVRAssignment" */ = {
+		66E1F06122D451090035D624 /* Build configuration list for PBXNativeTarget "VideoANDImageRecording" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66E1F06222D451090035D624 /* Debug */,
@@ -561,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66E1F06422D451090035D624 /* Build configuration list for PBXNativeTarget "YouVRAssignmentTests" */ = {
+		66E1F06422D451090035D624 /* Build configuration list for PBXNativeTarget "VideoANDImageRecordingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66E1F06522D451090035D624 /* Debug */,
@@ -570,7 +682,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66E1F06722D451090035D624 /* Build configuration list for PBXNativeTarget "YouVRAssignmentUITests" */ = {
+		66E1F06722D451090035D624 /* Build configuration list for PBXNativeTarget "VideoANDImageRecordingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66E1F06822D451090035D624 /* Debug */,
